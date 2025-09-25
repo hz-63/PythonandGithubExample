@@ -9,3 +9,5 @@ In Python wird jedes Skript beim Ausführen oder Importieren mit einem spezielle
 Wird das Skript direkt ausgeführt, ist __name__ gleich "__main__".
 Wird das Skript importiert, ist __name__ gleich dem Namen des Moduls.
 Die Konstruktion if __name__ == "__main__": erlaubt es, Code nur dann auszuführen, wenn das Skript direkt gestartet wird – und nicht, wenn es als Modul in ein anderes Skript eingebunden wird.
+
+
