@@ -1,2 +1,5 @@
 # PythonandGithubExample
-Demo
+## Liste von Beispielprojekten mit Beschreibungen
+### HelloWorld
+### Durschschnitt
+
