@@ -10,7 +10,7 @@ Das Programm fordert den Benutzer auf, drei Zahlen einzugeben. Anschließend wer
 
 
 # Berechnung des Durchschnitts
-
+```python 
 zahl1 = float(input("Gib die erste Zahl ein: "))
 zahl2 = float(input("Gib die zweite Zahl ein: "))
 zahl3 = float(input("Gib die dritte Zahl ein: "))
@@ -18,3 +18,4 @@ zahl3 = float(input("Gib die dritte Zahl ein: "))
 durchschnitt = (zahl1 + zahl2 + zahl3) / 3
 
 print("Der Durchschnitt der Zahlen ist:", durchschnitt)
+```
