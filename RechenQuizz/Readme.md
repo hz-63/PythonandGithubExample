@@ -1,0 +1,77 @@
+# Rechenquiz
+
+Dieses Projekt ist ein einfaches Rechenquiz in Python, das die vier Grundrechenarten (+, -, *, /) verwendet. Es eignet sich besonders, um das Kopfrechnen zu üben.
+
+## Funktionen
+
+- Zufällige Generierung von Rechenaufgaben
+- Unterstützung der vier Grundrechenarten
+- Auswertung der Antworten mit Rückmeldung
+- Anzeige der Gesamtpunktzahl am Ende
+- alle Operationen sind als Funktionen definiert
+
+## Verwendung
+
+1. Starte das Python-Skript `rechenquiz.py`.
+2. Beantworte die gestellten Rechenfragen.
+3. Erhalte direktes Feedback zu deinen Antworten.
+4. Am Ende wird deine Gesamtpunktzahl angezeigt.
+
+## Beispiel
+
+````python
+import random
+
+# Rechenoperationen als Funktionen
+def addiere(x, y):
+    return x + y
+
+def subtrahiere(x, y):
+    return x - y
+
+def multipliziere(x, y):
+    return x * y
+
+def dividiere(x, y):
+    return round(x / y, 2) if y != 0 else None
+
+# Mapping der Operatoren zu den Funktionen
+operations = {
+    '+': addiere,
+    '-': subtrahiere,
+    '*': multipliziere,
+    '/': dividiere
+}
+
+# Quiz generieren
+def generate_quiz(num_questions=10):
+    quiz = []
+    for _ in range(num_questions):
+        op = random.choice(list(operations.keys()))
+        x = random.randint(1, 100)
+        y = random.randint(1, 100)
+        if op == '/':
+            y = random.randint(1, 10)  # einfache Division
+        answer = operationsop
+        quiz.append((x, op, y, answer))
+    return quiz
+
+# Quiz durchführen
+def run_quiz(quiz):
+    score = 0
+    for i, (x, op, y, correct_answer) in enumerate(quiz, 1):
+        user_input = input(f"Frage {i}: Was ist {x} {op} {y}? ")
+        try:
+            user_answer = float(user_input)
+            if abs(user_answer - correct_answer) < 0.01:
+                print("✅ Richtig!")
+                score += 1
+            else:
+                print(f"❌ Falsch. Die richtige Antwort ist {correct_answer}.")
+        except ValueError:
+            print(f"⚠️ Ungültige Eingabe. Die richtige Antwort ist {correct_answer}.")
+    print(f"\n📊 Du hast {score} von {len(quiz)} Fragen richtig beantwortet.")
+
+if __name__ == "__main__":
+    quiz = generate_quiz()
+    run_quiz(quiz)
