@@ -47,12 +47,25 @@ operations = {
 def generate_quiz(num_questions=10):
     quiz = []
     for _ in range(num_questions):
-        op = random.choice(list(operations.keys()))
-        x = random.randint(1, 100)
-        y = random.randint(1, 100)
+        op = random.choice(['+', '-', '*', '/'])
+
         if op == '/':
-            y = random.randint(1, 10)  # einfache Division
-        answer = operationsop
+            y = random.randint(1, 10)
+            x = y * random.randint(1, 10)  # garantiert teilbar
+            answer = round(x / y, 2)
+        elif op == '+':
+            x = random.randint(1, 100)
+            y = random.randint(1, 100)
+            answer = x + y
+        elif op == '-':
+            x = random.randint(1, 100)
+            y = random.randint(1, 100)
+            answer = x - y
+        elif op == '*':
+            x = random.randint(1, 20)
+            y = random.randint(1, 20)
+            answer = x * y
+
         quiz.append((x, op, y, answer))
     return quiz
 
