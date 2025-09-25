@@ -1,5 +1,7 @@
 # PythonandGithubExample
 ## Liste von Beispielprojekten mit Beschreibungen
 ### HelloWorld
-### Durschschnitt
+### Durchschnitt
+### Eingabe
+### Eingabe mit Exception
 
