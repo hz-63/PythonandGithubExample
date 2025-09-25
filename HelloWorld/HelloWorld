@@ -13,7 +13,7 @@
 # und wenn ja, wird die main() Funktion aufgerufen, um den eigentlichen Ablauf des Programms zu starten.
 
 def main():
-    print("Hello World!")
+    print("Hello World Harald!")
 
 if __name__ == "__main__":
     main()
