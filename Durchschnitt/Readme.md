@@ -1,11 +1,20 @@
-# 🐍 Python
-Verwendung von if __name__ == "__main__"
-Dieses Projekt zeigt die Verwendung einer wichtigen Python-Konstruktion:
-if __name__ == "__main__" – ein Mechanismus zur Steuerung der Ausführung von Code, abhängig davon, ob ein Skript direkt ausgeführt oder als Modul importiert wird.
+# 📊 Durchschnittsberechnung mit Python
 
-## 📌 Zweck
-In Python wird jedes Skript beim Ausführen oder Importieren mit einem speziellen Namen versehen:
+Dieses kleine Python-Programm berechnet den Durchschnitt von drei Zahlen, die vom Benutzer eingegeben werden.
 
-Wird das Skript direkt ausgeführt, ist __name__ gleich "__main__".
-Wird das Skript importiert, ist __name__ gleich dem Namen des Moduls.
-Die Konstruktion if __name__ == "__main__": erlaubt es, Code nur dann auszuführen, wenn das Skript direkt gestartet wird – und nicht, wenn es als Modul in ein anderes Skript eingebunden wird.
+## 🧾 Beschreibung
+
+Das Programm fordert den Benutzer auf, drei Zahlen einzugeben. Anschließend werden diese Zahlen addiert und durch 3 geteilt, um den Durchschnitt zu berechnen. Das Ergebnis wird auf der Konsole ausgegeben.
+
+## 💡 Beispielcode
+
+
+# Berechnung des Durchschnitts
+
+zahl1 = float(input("Gib die erste Zahl ein: "))
+zahl2 = float(input("Gib die zweite Zahl ein: "))
+zahl3 = float(input("Gib die dritte Zahl ein: "))
+
+durchschnitt = (zahl1 + zahl2 + zahl3) / 3
+
+print("Der Durchschnitt der Zahlen ist:", durchschnitt)
