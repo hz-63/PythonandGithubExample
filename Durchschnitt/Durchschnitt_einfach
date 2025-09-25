@@ -1,3 +1,8 @@
+#Berechnung des Durchschnitts
+
+#Schreibe ein Programm, das den Durchschnitt von drei Zahlen berechnet, die der Benutzer eingibt. 
+#Das Programm soll die Zahlen addieren und durch 3 teilen, um den Durchschnitt zu ermitteln.
+
 zahl1 = float(input("Gib die erste Zahl ein: "))
 zahl2 = float(input("Gib die zweite Zahl ein: "))
 zahl3 = float(input("Gib die dritte Zahl ein: "))
