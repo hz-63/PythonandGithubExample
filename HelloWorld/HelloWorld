@@ -1,0 +1,19 @@
+# Die Anweisung if __name__ == "__main__" ist eine gängige Konstruktion in Python, die überprüft,
+# ob das aktuelle Skript als Hauptprogramm (also direkt ausgeführt) oder als Modul in ein anderes Skript importiert wird.
+#
+# Wenn das Skript direkt ausgeführt wird (als Hauptprogramm), dann wird der Codeblock unter if __name__ == "__main__": ausgeführt.
+# In diesem Fall führt es die main() Funktion aus, die den Hauptablauf des Programms enthält.
+#
+# Wenn das Skript jedoch in ein anderes Skript importiert wird (als Modul), wird der Codeblock unter if __name__ == "__main__": nicht ausgeführt.
+# Das verhindert, dass der Code in main() unerwartet bei der Importierung eines anderen Skripts ausgeführt wird.
+#
+# Das bedeutet, dass der Code innerhalb des if __name__ == "__main__": Blocks normalerweise nur die Ausführung des Hauptprogramms steuert,
+# wenn das Skript direkt ausgeführt wird und nicht, wenn es als Modul importiert wird.
+# Zusammenfassend dient diese Konstruktion dazu, zu überprüfen, ob das aktuelle Skript als Hauptprogramm ausgeführt wird,
+# und wenn ja, wird die main() Funktion aufgerufen, um den eigentlichen Ablauf des Programms zu starten.
+
+def main():
+    print("Hello World!")
+
+if __name__ == "__main__":
+    main()
