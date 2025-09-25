@@ -80,7 +80,7 @@ def run_quiz(quiz):
                 print("✅ Richtig!")
                 score += 1
             else:
-                print(f"❌ Falsch. Die richtige Antwort ist {correct_answer}.")
+                print(f"❌  Falsch. Die richtige Antwort ist {correct_answer}.")
         except ValueError:
             print(f"⚠️ Ungültige Eingabe. Die richtige Antwort ist {correct_answer}.")
     print(f"\n📊 Du hast {score} von {len(quiz)} Fragen richtig beantwortet.")
